@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+    margin: 20px 15px 20px 15px;
+}
+header
+{
+    color: palevioletred;
+}
+.box1
+{
+    background-color: orange ;
+    color: black;
+}
+.box2
+{
+    background-color: aqua;
+    color: black;
+}
+.box3{
+    background-color: greenyellow;
+    color: black;
+}
+.box4
+{
+    background-color: grey;
+    color: white;
+}
+.box1,.box2,.box3,.box4
+{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 300%;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width:714px) and (orientation:landscape) and (max-width:1396px)
+{
+    .box1,.box2,.box3,.box4
+    {
+        width: 50%;
+        position: fixed;
+    }
+    .box1,.box3
+    {
+        left: 0%;
+    }
+    .box2,.box4
+    {
+        left: 50%;
+    }
+    .box1,.box2
+    {
+        top: 0%;
+    }
+    .box3,.box4
+    {
+        top: 85.33px;
+    }
+}
+
+@media screen and (min-width:1396px) and (orientation:landscape)
+{
+    .box1,.box2,.box3,.box4
+    {
+        width: 25%;
+        position: fixed;
+    }
+    .box1
+    {
+        left: 0%;
+    }
+    .box2
+    {
+        left: 25%;
+    }
+    .box3
+    {
+        left: 50%;
+    }
+    .box4
+    {
+        left: 75%;
+    }
+}

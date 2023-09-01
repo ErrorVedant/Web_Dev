@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>Google Form</p>
+    </header>
+
+    <main>
+        <form>
+
+        <section>
+            <p class="instuct">All the * are compulsory</p>
+            <h2>Personal Details</h2>
+            <p>Name: <input type="text" name="name" id="name" placeholder="Vedant"></p>
+            
+            <fieldset>
+                <legend>Gender</legend>
+                <p>Male:<input type="radio" name="gender"></p>
+                <p>Female:<input type="radio" name="gender"></p> 
+                <p>Other:<input type="radio" name="gender"></p>
+            </fieldset>
+
+            <p>Adress:<textarea name="adress" id="adress" rows="7"></textarea></p>
+
+            <p>Date of Birth:<input type="date" name="dob" id="dob"></p>
+        </section>
+
+        <section>
+            <h2>Educational Details</h2>
+            <p>Your educational qualification 
+                <select name="qualification" id="qualification">
+                    <option value="">--Enter a value--</option>
+                    <option value="1">class 10 pass</option>
+                    <option value="2">class 12 pass</option>
+                    <option value="3">graduate</option>
+                </select>
+            </p>
+            <p>Your email <input type="email" name="email" id="amail" placeholder="abc@gmail.com"></p>
+            <p>Why do you want to join the compony <textarea name="join" class="join" rows="7"></textarea></p>
+            <fieldset>
+                <legend>Your experiance</legend>
+                <p>Good<input type="radio" name="experiance"></p> 
+                <p>Avg<input type="radio" name="experiance"></p> 
+                <p>Bad<input type="radio" name="experiance"></p> 
+            </fieldset>
+        </section>
+
+        <section>
+            <input type="submit" name="submit" id="submit">
+        </section>
+
+        </form>
+    </main>
+</body>
+
+</html>
